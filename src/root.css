@@ -13,3 +13,14 @@ a {
 body {
   font-family: 'Inter', sans-serif;
 }
+
+.page-wrapper {
+  max-width: 1260px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: nowrap;
+}
