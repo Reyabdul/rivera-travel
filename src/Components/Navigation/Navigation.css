@@ -1,0 +1,63 @@
+/*
+Code reference
+https://www.codevertiser.com/reactjs-responsive-navbar/
+*/
+.navigation-container {
+    position: fixed;
+    width: 100%;
+    padding-top: .7rem;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    flex-grow: 2;
+}
+
+.nav-items {
+    align-self: center;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.navigation-container ul li:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.contact-button {
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: .6rem;
+    font-size: .95rem;
+    padding: .5rem 1rem .5rem 1rem;
+    margin: 0;
+    border: .1rem solid #1a232447;
+}
+
+@media (max-width: 600px) {
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        align-self: center;
+        background-color: antiquewhite;
+    }
+
+    .nav-items {
+        position: absolute;
+        flex-direction: column;
+        width: 0;
+        right: 0;
+        top: 57px;
+        transition: all 0.15s ease-in;
+    }
+
+    .nav-items.active {
+        width: 10rem;
+    }
+
+    .navigation-container ul li:not(:last-child) {
+        margin: 1rem 0 1rem 0.5rem; 
+    }
+}
