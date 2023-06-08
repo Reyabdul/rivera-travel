@@ -5,41 +5,54 @@
 }
 
 .video-container video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    margin: auto;
-    display: block;
-    /*
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    */
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: block;
     -webkit-clip-path: url(#videoText);
     clip-path: url(#videoText);
 }
 
-.video-container svg {
-    position: absolute;
+.svg-container {
+    width: 90%;
+    height: 250px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.svg-container svg {
     width: 0;
     height: 0;
 }
 
-.video-container text {
-    font-family: inter;
-    font-size: 10rem;
-    font-weight: 900;
+.svg-container text {
+    font-family: 'Inter', sans-serif;
+    font-size: 9rem;
+    font-weight: bold;
     text-transform: uppercase;
-    width: 100%;
-    height: 100%;
-    /*
-    transform: translate(200%,500%);
-    */
-    transform: translate(calc(100vw/10), calc(100vh/1.9));
+    transform: scale(0.00058333, 0.0025);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1200px) {
     .video-container text {
-        font-size: 3rem;
+        font-size: 8.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .video-container text {
+        font-size: 7rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .video-container text {
+        transform: scale(0.00058333, 0.0025)
     }
 }
