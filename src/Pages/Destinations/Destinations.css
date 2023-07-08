@@ -1,0 +1,10 @@
+.map-container {
+    width: 100%;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.map-container::-webkit-scrollbar {
+    display: none;
+}

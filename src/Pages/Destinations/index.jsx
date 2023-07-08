@@ -5,8 +5,10 @@ console.log(map)
 
 const Destinations = () => {
     return (
-        <div className="page-wrapper">
-            <img src={map} alt="world map" id="map"/>
+        <div className="page-wrapper destination-container">
+            <div className="map-container">
+                <img src={map} alt="world map" id="map"/>
+            </div>
             <div className="flex">
                 <div>
                     <h2>Mexico</h2>

@@ -9,6 +9,12 @@
 body {
   font-family: 'Inter', sans-serif;
   color: #1A2324;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 a {
@@ -25,7 +31,7 @@ li {
 }
 
 .page-wrapper {
-  max-width: 1260px;
+  max-width: 87.5%;
   margin: 0 auto;
   position: relative;
 }

@@ -25,8 +25,8 @@ const Loading = () => {
                             {screenWidth > 500 
                                 ? <text x="15%" y="98%" textLength="100%">Rivera Travel</text>
                                 : <>
-                                    <text x="40%" y="80%" textLength="50%">Rivera</text>
-                                    <text x="40%" y="120%" textLength="50%">Travel</text>
+                                    <text x="5%" y="80%" textLength="30%">Rivera</text>
+                                    <text x="5%" y="110%" textLength="30%">Travel</text>
                                   </>
                             }
                         </clipPath>

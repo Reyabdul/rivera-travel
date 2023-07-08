@@ -53,6 +53,7 @@
 
 @media (max-width: 500px) {
     .video-container text {
-        transform: scale(0.00058333, 0.0025)
+        font-size: 5rem;
+        transform: scale(0.002, 0.0023);
     }
 }
