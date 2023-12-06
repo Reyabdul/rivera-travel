@@ -14,9 +14,12 @@ const Navigation = () => {
     return (
         <nav className="navigation-container">
             <div className="page-wrapper flex">
+               
                 <div className="logo">
-                    <a href="#"><img src={Logo} alt="logo"/></a>
+                    {/* <a href="#"><img src={Logo} alt="logo"/></a> */}
                 </div>
+
+             
                 <div className="menu-icon" onClick={handleShowNavbar}>
                     <MenuIcon />
                 </div>

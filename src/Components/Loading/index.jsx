@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Loading.css';
-import video from '../../Assets/travelvideo.mp4'
+//import video from '../../Assets/travelvideo.mp4'
 
 const Loading = () => {
 
@@ -33,11 +33,13 @@ const Loading = () => {
                     </defs>
                 </svg>
             </div>
-
+{/*}
             <video loop autoPlay muted>
                 <source src={video} type="video/mp4"/>
-            </video>
+            </video>     
+            */}
         </div>
+                   
     )
 }
 

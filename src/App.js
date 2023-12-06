@@ -1,16 +1,31 @@
-import Loading from './Components/Loading';
-import Navigation from './Components/Navigation';
-import Destinations from './Pages/Destinations';
-import './root.css';
+import Loading from "./Components/Loading";
+import Navigation from "./Components/Navigation";
+import Destinations from "./Pages/Destinations";
+import LandPage from "./Pages/LandingPage";
+import BackgroundVideo from "../src/Components/Background";
+import "./root.css";
+import Services from "./Pages/Services";
 
 const App = () => {
   return (
     <div>
-      <Loading />
+      <BackgroundVideo />
       <Navigation />
+      <main>
+        <Services />
+      </main>
+
+      {/* 
+                  <LandPage />
+
+
+      
+      <Loading />
       <Destinations />
+
+      */}
     </div>
-  )
-}
+  );
+};
 
 export default App;
