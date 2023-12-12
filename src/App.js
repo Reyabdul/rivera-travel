@@ -13,6 +13,7 @@ const App = () => {
       <Navigation />
       <main>
         <Services />
+        <Destinations />
       </main>
 
       {/* 
