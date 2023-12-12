@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import Logo from '../../Assets/logo.png';
 import {ReactComponent as MenuIcon} from '../../Assets/menu-icon.svg';
+import {ReactComponent as CloseIcon} from '../../Assets/close-outline.svg';
 import './Navigation.css';
 
 const Navigation = () => {
@@ -21,7 +22,7 @@ const Navigation = () => {
 
              
                 <div className="menu-icon" onClick={handleShowNavbar}>
-                    <MenuIcon />
+                    {showNavbar ? <CloseIcon /> : <MenuIcon />}
                 </div>
                 <ul className={`nav-items flex ${showNavbar && 'active'}`}>
                     <li><a href="#">Destinations</a></li>

@@ -42,22 +42,26 @@ https://www.codevertiser.com/reactjs-responsive-navbar/
         cursor: pointer;
         align-self: center;
         background-color: antiquewhite;
+        width: 40px;
     }
 
     .nav-items {
         position: absolute;
         flex-direction: column;
+        background-color: #fff;
         width: 0;
         right: 0;
-        top: 57px;
-        transition: all 0.15s ease-in;
+        top: 45px;
+        overflow: hidden;
+        transition: all 0.3s ease-in;
     }
 
     .nav-items.active {
-        width: 10rem;
+        width: 50%;
     }
 
-    .navigation-container ul li:not(:last-child) {
+    .navigation-container ul li {
         margin: 1rem 0 1rem 0.5rem; 
     }
+
 }
