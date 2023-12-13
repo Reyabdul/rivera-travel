@@ -1,29 +1,7 @@
-.video-container {
-    position: relative;
-    width: 100vw;
+.loading {
     height: 100vh;
-}
-
-.video-container video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    display: block;
-    -webkit-clip-path: url(#videoText);
-    clip-path: url(#videoText);
-}
-
-.svg-container {
-    width: 90%;
-    height: 250px;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: grid;
+    place-items: center;
 }
 
 .svg-container svg {
@@ -31,29 +9,31 @@
     height: 0;
 }
 
-.svg-container text {
-    font-family: 'Inter', sans-serif;
-    font-size: 9rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    transform: scale(0.00058333, 0.0025);
+#landing-video-container {
+    position: absolute;
+    width: 624px;
+    height: 292px;
+    overflow: hidden;
+    clip-path: url(#text-path-big);
 }
 
-@media (max-width: 1200px) {
-    .video-container text {
-        font-size: 8.5rem;
+#landing-video-container video {
+    position: inherit;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    #landing-video-container {
+        width: 395px;
+        height: 186px;
+        clip-path: url(#text-path-medium);
     }
 }
 
-@media (max-width: 768px) {
-    .video-container text {
-        font-size: 7rem;
-    }
-}
-
-@media (max-width: 500px) {
-    .video-container text {
-        font-size: 5rem;
-        transform: scale(0.002, 0.0023);
+@media (max-width: 375px) {
+    #landing-video-container {
+        width: 264px;
+        height: 124px;
+        clip-path: url(#text-path-small);
     }
 }

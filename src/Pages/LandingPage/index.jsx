@@ -1,14 +1,24 @@
+import Loading from "../../Components/Loading";
+import Navigation from "../../Components/Navigation";
+import Destinations from "../../Pages/Destinations";
+import BackgroundVideo from "../../Components/Background";
+import Services from "../../Pages/Services";
+
 import './LandingPage.css'
 
 
 const LandingPage = () => {
 
     return (
-        <div className='header'>
-
-            <h1 className='temp-header'>"Under Construction"</h1>
-
-        </div>
+        <>
+            <BackgroundVideo />
+            <Navigation />
+            <main>
+                <Services />
+                <Destinations />
+                <Loading />
+            </main>
+        </>
     )
 
 }

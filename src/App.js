@@ -1,32 +1,23 @@
 import Loading from "./Components/Loading";
-import Navigation from "./Components/Navigation";
-import Destinations from "./Pages/Destinations";
-import LandPage from "./Pages/LandingPage";
-import BackgroundVideo from "../src/Components/Background";
+import Landing from "./Pages/LandingPage";
+import { useEffect, useState } from "react";
+
 import "./root.css";
-import Services from "./Pages/Services";
 
 const App = () => {
+
+  {/* Reference for adding loading page: https://dev.to/beginarjun/how-to-create-a-simple-loading-screen-in-react-1md6 */}
+  const [loading, setLoading] = useState(true);
+
+  useEffect(()=>{
+    setTimeout(()=>setLoading(false), 3300)
+  },[])
+
   return (
     <div>
-      <BackgroundVideo />
-      <Navigation />
-      <main>
-        <Services />
-        <Destinations />
-      </main>
-
-      {/* 
-                  <LandPage />
-
-
-      
-      <Loading />
-      <Destinations />
-
-      */}
+      {loading ? <Loading loading={loading} /> : <Landing />}
     </div>
-  );
+  )
 };
 
 export default App;
