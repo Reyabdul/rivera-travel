@@ -1,4 +1,3 @@
-import Loading from "../../Components/Loading";
 import Navigation from "../../Components/Navigation";
 import Destinations from "../../Pages/Destinations";
 import BackgroundVideo from "../../Components/Background";
@@ -16,7 +15,6 @@ const LandingPage = () => {
             <main>
                 <Services />
                 <Destinations />
-                <Loading />
             </main>
         </>
     )
