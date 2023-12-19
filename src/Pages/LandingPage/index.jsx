@@ -19,6 +19,8 @@ const LandingPage = () => {
   const service = document.getElementById("services");
   const serviceContainer = document.getElementById("services-container");
 
+    //can reference this video: https://www.youtube.com/watch?v=T8EYosX4NOo
+
   if (activeLinkId === "services") {
     service.classList.toggle("inverse");
 
