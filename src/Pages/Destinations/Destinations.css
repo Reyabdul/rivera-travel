@@ -1,7 +1,15 @@
 .destinations {
-    background-color: #fff;
-    height: 100vh;
+    /*background-color: #fff;*/
+    height: 200vh;
     width: 100%;
+    transition: background-color 100ms linear;
+    padding: 20rem 0;
+    color: white
+
+}
+
+#destination-container {
+    /* display: none; */
 }
 
 .images img {

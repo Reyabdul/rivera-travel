@@ -1,8 +1,13 @@
+import { useNav } from '../../Hooks/useNav';
+
 import './Destinations.css';
 
 const Destinations = () => {
+
+    const destinationsRef = useNav("destinations");
+
     return (
-        <div className="destinations">
+        <section className="destinations" id='destinations' ref={destinationsRef} >
             <div className="page-wrapper" id="destination-container">
                 <h2>Our destinations</h2>
                 <div className="grid images">
@@ -12,7 +17,7 @@ const Destinations = () => {
                     <img id="img-4"/>  
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

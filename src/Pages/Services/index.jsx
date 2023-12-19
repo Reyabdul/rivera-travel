@@ -1,8 +1,13 @@
 import {ReactComponent as MenuIcon} from '../../Assets/menu-icon.svg';
+import { useNav } from "../../Hooks/useNav";
+
+
 
 import './Services.css';
 
-const Services = () => {
+export const Services = () => {
+
+    const servicesRef = useNav("services");
 
     const services = [
         {
@@ -23,7 +28,7 @@ const Services = () => {
     ]
 
     return(
-        <div className='services'>
+        <section className='services' id='services' ref={servicesRef} >
             <div className="page-wrapper flex" id="services-container">
             {services.map((service, index)=>(
                 <div className='service'>
@@ -33,8 +38,8 @@ const Services = () => {
                 </div>
             ))}
             </div>
-        </div>
+        </section>
     )
 }
 
-export default Services;
+;
