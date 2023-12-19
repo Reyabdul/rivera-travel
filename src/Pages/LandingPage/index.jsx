@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect, useContext } from "react";
+import { useContext } from "react";
 
 import Loading from "../../Components/Loading";
 import Navigation from "../../Components/Navigation";
@@ -6,50 +6,50 @@ import Destinations from "../../Pages/Destinations";
 import BackgroundVideo from "../../Components/Background";
 import { Services } from "../../Pages/Services";
 
-import { NavProvider } from "../../Context/NavContext";
-
 import { NavContext } from "../../Context/NavContext";
+import { useNav } from "../../Hooks/useNav";
 
-
-import './LandingPage.css'
+import "./LandingPage.css";
 
 const LandingPage = () => {
-        
-    const { activeLinkId } = useContext(NavContext);
+  const landingPageRef = useNav("landing-page");
 
-    if (activeLinkId === 'services'){
-        const service = document.getElementById('services');
-        const serviceContainer = document.getElementById('services-container');
-        
-        service.classList.toggle("inverse");
+  const { activeLinkId } = useContext(NavContext);
 
-        //service.style.backgroundColor = "white";
-        serviceContainer.style.display = "flex";
+  const service = document.getElementById("services");
+  const serviceContainer = document.getElementById("services-container");
 
-    } else if (activeLinkId === 'destinations') {
+  if (activeLinkId === "services") {
+    service.classList.toggle("inverse");
 
-        const destination = document.getElementById('destinations');
-        const destinationContainer = document.getElementById('destination-container');
-        
-        //console.log("I'm in desitonations")
-        destination.style.backgroundColor = "black";
-        destinationContainer.style.display = "grid";
-    }
+    //service.style.backgroundColor = "white";
+    serviceContainer.style.display = "flex";
+  } else if (activeLinkId === "destinations") {
+    const destination = document.getElementById("destinations");
+    const destinationContainer = document.getElementById(
+      "destination-container"
+    );
 
-    return (
-        <div className="LandingPage">
-                <Loading />
+    //console.log("I'm in desitonations")
+    destination.style.backgroundColor = "black";
+    destinationContainer.style.display = "grid";
+  }
 
-                <main>
-                    <Services />
-                    <Destinations />
-                </main>
+  //console.log(activeLinkId)
 
-                <BackgroundVideo />
-                <Navigation />
-        </div>
-    )
+  return (
+    <div className="LandingPage" ref={landingPageRef}>
+      <Loading />
 
-}
+      <main>
+        <Services />
+        <Destinations />
+      </main>
+
+      <BackgroundVideo />
+      <Navigation />
+    </div>
+  );
+};
 
 export default LandingPage;
