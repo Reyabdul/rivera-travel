@@ -10,3 +10,16 @@
 .inverse {
     background-color: orange;
 }
+
+.LandingPage {
+    animation: ease-out 2s forwards fade-in;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

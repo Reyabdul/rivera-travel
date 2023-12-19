@@ -5,7 +5,7 @@ import { useNav } from "../../Hooks/useNav";
 
 import './Services.css';
 
-export const Services = () => {
+export const Services = ({activeLinkId}) => {
 
     const servicesRef = useNav("services");
 
@@ -28,7 +28,7 @@ export const Services = () => {
     ]
 
     return(
-        <section className='services' id='services' ref={servicesRef} >
+        <section className={`services ${activeLinkId === "destinations" && "inverse"}`} id='services' ref={servicesRef} >
             <div className="page-wrapper flex" id="services-container">
             {services.map((service, index)=>(
                 <div className='service'>

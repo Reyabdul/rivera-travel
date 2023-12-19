@@ -22,7 +22,7 @@ const LandingPage = () => {
     //can reference this video: https://www.youtube.com/watch?v=T8EYosX4NOo
 
   if (activeLinkId === "services") {
-    service.classList.toggle("inverse");
+    //service.classList.toggle("inverse");
 
     //service.style.backgroundColor = "white";
     serviceContainer.style.display = "flex";
@@ -33,19 +33,19 @@ const LandingPage = () => {
     );
 
     //console.log("I'm in desitonations")
-    destination.style.backgroundColor = "black";
+    //destination.style.backgroundColor = "black";
     destinationContainer.style.display = "grid";
   }
 
-  //console.log(activeLinkId)
+  console.log(activeLinkId)
 
   return (
     <div className="LandingPage" ref={landingPageRef}>
-      <Loading />
+      {/*<Loading />*/}
 
       <main>
-        <Services />
-        <Destinations />
+        <Services activeLinkId={activeLinkId} />
+        <Destinations activeLinkId={activeLinkId} />
       </main>
 
       <BackgroundVideo />

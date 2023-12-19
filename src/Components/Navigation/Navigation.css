@@ -51,6 +51,7 @@ https://www.codevertiser.com/reactjs-responsive-navbar/
         background-color: #fff;
         width: 0;
         right: 0;
+        opacity: 0;
         top: 45px;
         overflow: hidden;
         transition: all 0.3s ease-in;
@@ -58,6 +59,7 @@ https://www.codevertiser.com/reactjs-responsive-navbar/
 
     .nav-items.active {
         width: 50%;
+        opacity: 1;
     }
 
     .navigation-container ul li {

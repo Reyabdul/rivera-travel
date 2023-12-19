@@ -2,12 +2,12 @@ import { useNav } from '../../Hooks/useNav';
 
 import './Destinations.css';
 
-const Destinations = () => {
+const Destinations = ({activeLinkId}) => {
 
     const destinationsRef = useNav("destinations");
 
     return (
-        <section className="destinations" id='destinations' ref={destinationsRef} >
+        <section className={`destinations ${activeLinkId === "services" && "inverse"}`} id='destinations' ref={destinationsRef} >
             <div className="page-wrapper" id="destination-container">
                 <h2>Our destinations</h2>
                 <div className="grid images">
