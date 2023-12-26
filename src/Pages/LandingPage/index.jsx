@@ -5,6 +5,7 @@ import Navigation from "../../Components/Navigation";
 import Destinations from "../../Pages/Destinations";
 import BackgroundVideo from "../../Components/Background";
 import { Services } from "../../Pages/Services";
+import Contact from '../Contact';
 
 import { NavContext } from "../../Context/NavContext";
 import { useNav } from "../../Hooks/useNav";
@@ -46,6 +47,7 @@ const LandingPage = () => {
       <main>
         <Services activeLinkId={activeLinkId} />
         <Destinations activeLinkId={activeLinkId} />
+        <Contact />
       </main>
 
       <BackgroundVideo />
