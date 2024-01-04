@@ -1,16 +1,14 @@
 .services {
-    height: 200vh;
+    height: 100vh;
     width: 100%;
-    transition: all 100ms linear;
     padding: 20rem 0;
     display: flex;
     justify-content: center;
     align-items: centre;
 }
 
-.inverse {
-    background-color: orange;
-}
+
+
 
 #services-container {
     /* display: none; */

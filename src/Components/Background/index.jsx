@@ -2,16 +2,20 @@ import backgroundVideo from '../../Assets/background3.mp4';
 import './Background.css';
 
 
-const BackgroundVideo = ({id}) => {
+export const BackgroundVideo = ({activeLinkId}) => {
 
-    return (
-        <div className="background-video-container" id={id} >
-            <video className='background-video' autoPlay loop muted playsInline>
-                <source src={backgroundVideo} type="video/mp4"/>
-            </video>
-            {/*<h1 className='temp-heading'>Under Construction</h1>*/}
-        </div>
-    )
+    if(activeLinkId === "services" || activeLinkId === "destinations" ) {
+        return (<></>);
+    } else {
+        return (
+            <div className="bckground-video-container" id='background-video-container' >
+                <video className='background-video' autoPlay loop muted playsInline>
+                    <source src={backgroundVideo} type="video/mp4"/>
+                </video>
+                {/*<h1 className='temp-heading'>Under Construction</h1>*/}
+            </div>
+        )
+    }
 
 }
 

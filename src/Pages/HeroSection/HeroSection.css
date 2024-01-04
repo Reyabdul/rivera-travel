@@ -1,0 +1,13 @@
+.herosection {
+    height: 150vh;
+    width: 100%;
+}
+
+.main-header {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    color:yellow;
+    font-size: 4rem;
+    padding: 18rem 0;
+}

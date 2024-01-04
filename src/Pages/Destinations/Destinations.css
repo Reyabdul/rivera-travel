@@ -1,8 +1,8 @@
 .destinations {
     /*background-color: #fff;*/
-    height: 200vh;
+    height: 100vh;
     width: 100%;
-    transition: background-color 100ms linear;
+    transition: background-color 0.3s linear;
     padding: 20rem 0;
     color: white
 
@@ -11,6 +11,7 @@
 #destination-container {
     /* display: none; */
 }
+
 
 .images img {
     border: 1px solid #000;

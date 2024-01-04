@@ -7,7 +7,7 @@ const Destinations = ({activeLinkId}) => {
     const destinationsRef = useNav("destinations");
 
     return (
-        <section className={`destinations ${activeLinkId === "services" && "inverse"}`} id='destinations' ref={destinationsRef} >
+        <section className={`destinations ${activeLinkId === "destinations" && "animate" && "inverse2"}`} id='destinations' ref={destinationsRef} >
             <div className="page-wrapper" id="destination-container">
                 <h2>Our destinations</h2>
                 <div className="grid images">

@@ -1,6 +1,6 @@
 import { useContext } from "react";
 
-import Loading from "../../Components/Loading";
+import HeroSection from "../HeroSection";
 import Navigation from "../../Components/Navigation";
 import Destinations from "../../Pages/Destinations";
 import BackgroundVideo from "../../Components/Background";
@@ -13,29 +13,16 @@ import { useNav } from "../../Hooks/useNav";
 import "./LandingPage.css";
 
 const LandingPage = () => {
+  
   const landingPageRef = useNav("landing-page");
-
   const { activeLinkId } = useContext(NavContext);
-
-  const service = document.getElementById("services");
-  const serviceContainer = document.getElementById("services-container");
 
     //can reference this video: https://www.youtube.com/watch?v=T8EYosX4NOo
 
   if (activeLinkId === "services") {
-    //service.classList.toggle("inverse");
 
-    //service.style.backgroundColor = "white";
-    serviceContainer.style.display = "flex";
   } else if (activeLinkId === "destinations") {
-    const destination = document.getElementById("destinations");
-    const destinationContainer = document.getElementById(
-      "destination-container"
-    );
 
-    //console.log("I'm in desitonations")
-    //destination.style.backgroundColor = "black";
-    destinationContainer.style.display = "grid";
   }
 
   console.log(activeLinkId)
@@ -45,12 +32,13 @@ const LandingPage = () => {
       {/*<Loading />*/}
 
       <main>
+        <HeroSection />
         <Services activeLinkId={activeLinkId} />
         <Destinations activeLinkId={activeLinkId} />
         <Contact />
       </main>
 
-      <BackgroundVideo />
+      <BackgroundVideo activeLinkId={activeLinkId}/>
       <Navigation />
     </div>
   );

@@ -1,25 +1,50 @@
-.temp-header {
-    width: 150vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.inverse {
+    background-color: white;
+    animation: ease-out 1s fade-in;
+
 }
 
-.inverse {
-    background-color: orange;
+.outverse {
+    background-color: white;
+    animation: ease-out .3s fade-out; 
+}
+
+.inverse2 {
+    background-color: #000;
+    color: white;
+    animation: ease-out 1s fade-in;
+
+}
+
+.outvers2 {
+    background-color: white;
+    animation: ease-out .3s fade-out; 
 }
 
 .LandingPage {
-    animation: ease-out 2s forwards fade-in;
+    height: 100vh;
+    width: 100%;
+    animation: ease-out 3s forwards fade-in;
 }
 
 @keyframes fade-in {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
+
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
 }
