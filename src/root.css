@@ -38,6 +38,10 @@ li {
   list-style: none;
 }
 
+hr {
+  width: 2rem;
+}
+
 .page-wrapper {
   max-width: 87.5%;
   margin: 0 auto;

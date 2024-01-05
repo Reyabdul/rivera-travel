@@ -2,13 +2,16 @@ import backgroundVideo from '../../Assets/background3.mp4';
 import './Background.css';
 
 
-export const BackgroundVideo = ({activeLinkId}) => {
+const BackgroundVideo = ({id, activeLinkId}) => {
 
-    if(activeLinkId === "services" || activeLinkId === "destinations" ) {
-        return (<></>);
+    const section = document.querySelector("section");
+
+
+    if(activeLinkId === "services" || activeLinkId === "destinations" || activeLinkId === "contacts" ) {
+        return null;
     } else {
         return (
-            <div className="bckground-video-container" id='background-video-container' >
+            <div className="bckground-video-container" id={id} >
                 <video className='background-video' autoPlay loop muted playsInline>
                     <source src={backgroundVideo} type="video/mp4"/>
                 </video>

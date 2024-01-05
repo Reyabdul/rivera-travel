@@ -1,6 +1,6 @@
 .destinations {
     /*background-color: #fff;*/
-    height: 100vh;
+    height: 100%;
     width: 100%;
     transition: background-color 0.3s linear;
     padding: 20rem 0;

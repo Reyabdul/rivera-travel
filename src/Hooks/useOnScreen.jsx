@@ -5,7 +5,7 @@ export const useOnScreen = (ref) => {
 
   const options = {
     root: null, //it is the view port
-    rootMargin: "50px",
+    //rootMargin: "-50px",
     threshold: 0.5, //0 - 1 scale (default 0)
   };
 
@@ -20,7 +20,7 @@ export const useOnScreen = (ref) => {
   useEffect(() => {
     observer.observe(ref.current);
 
-    return;
+    return () => observer.disconnect();
   });
 
   return isOnScreen;

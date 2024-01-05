@@ -1,14 +1,12 @@
 .services {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     padding: 20rem 0;
     display: flex;
     justify-content: center;
     align-items: centre;
+    /*animation: all 3s fade-in;*/
 }
-
-
-
 
 #services-container {
     /* display: none; */

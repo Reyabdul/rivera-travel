@@ -18,7 +18,8 @@ const App = () => {
   return (
     <div>
       <NavProvider>
-        {loading ? <Loading loading={loading} /> : <Landing />}
+        {/* {loading ? <Loading loading={loading} /> : <Landing />} */}
+        <Landing />
       </NavProvider>
     </div>
   );
