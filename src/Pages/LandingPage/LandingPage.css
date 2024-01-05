@@ -2,10 +2,15 @@
     height: 100%;
     width: 100%;
     animation: ease-out 1s forwards fade-in;
+    transition: all 1s ease-in;
 }
 
 .animate {
     transition: all 1s ease-in;
+}
+
+.addAnimation {
+    animation: ease-out 1s forwards fade-in;
 }
 
 .unanimate {

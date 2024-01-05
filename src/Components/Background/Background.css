@@ -1,4 +1,6 @@
+.background-video-container {
 
+}
 
 .background-video {
     width: 100vw;
@@ -11,7 +13,6 @@
     bottom: 0;
     z-index: -1;
     filter: saturate(100%);
-
 }
 
 .temp-heading {
@@ -20,7 +21,6 @@
     color: yellow;
     display: flex;
     padding: 25rem;
-
 }
 
 @media screen and (max-width: 480px) {

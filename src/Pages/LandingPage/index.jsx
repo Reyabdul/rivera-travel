@@ -18,13 +18,18 @@ const LandingPage = () => {
 
     //can reference this video: https://www.youtube.com/watch?v=T8EYosX4NOo
 
+  const landingPage = document.querySelector(".LandingPage");
+
   if (activeLinkId === "services") {
-    document.body.style.backgroundColor = "teal";
+    //document.body.style.backgroundColor = "teal";
+    landingPage.style.backgroundColor = "teal";
     document.body.classList.add("animate");
   } else if (activeLinkId === "destinations") {
-    document.body.style.backgroundColor = "#f2f2f2";
+    landingPage.style.backgroundColor = "#f2f2f2";
   } else if (activeLinkId === "contacts") {
-    document.body.style.backgroundColor = "#202124";
+    landingPage.style.backgroundColor = "#202124";
+  } else if (activeLinkId === "herosection") {
+    landingPage.style.backgroundColor = "transparent";
   }
 
   console.log(activeLinkId)
