@@ -7,10 +7,11 @@
 }
 
 .main-header {
-
     color:yellow;
     font-size: 5rem;
     font-weight: 900;
     letter-spacing: 10px;
     text-transform: uppercase;
+    opacity: 0;
+    animation: .5s ease-out 2s forwards fade-in;
 }
