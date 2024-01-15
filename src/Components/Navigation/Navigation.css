@@ -5,7 +5,7 @@ https://www.codevertiser.com/reactjs-responsive-navbar/
 .navigation-container {
     position: fixed;
     width: 100%;
-    padding-top: .7rem;
+    padding-top: 1rem;
     top: 0;
     z-index: 10;
 }
@@ -18,6 +18,10 @@ https://www.codevertiser.com/reactjs-responsive-navbar/
     align-self: center;
 }
 
+.nav-items li a {
+    color: #fff;
+}
+
 .menu-icon {
     display: none;
 }
@@ -28,7 +32,7 @@ https://www.codevertiser.com/reactjs-responsive-navbar/
 
 .contact-button {
     cursor: pointer;
-    background-color: #fff;
+    background-color: orange;
     border-radius: .6rem;
     font-size: .95rem;
     padding: .5rem 1rem .5rem 1rem;
@@ -41,14 +45,13 @@ https://www.codevertiser.com/reactjs-responsive-navbar/
         display: block;
         cursor: pointer;
         align-self: center;
-        background-color: antiquewhite;
         width: 40px;
+        color: #fff;
     }
 
     .nav-items {
         position: absolute;
         flex-direction: column;
-        background-color: #fff;
         width: 0;
         right: 0;
         opacity: 0;

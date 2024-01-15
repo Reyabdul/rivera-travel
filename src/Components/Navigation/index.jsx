@@ -26,7 +26,7 @@ const Navigation = () => {
                 </div>
                 <ul className={`nav-items flex ${showNavbar && 'active'}`}>
                     <li><a href="#">Destinations</a></li>
-                    <li><a className="contact-button" href="#">Get in touch</a></li>
+                    <li><a className="contact-button" href="#contacts">Get in touch</a></li>
                 </ul>
             </div>
         </nav>
