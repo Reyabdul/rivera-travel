@@ -21,15 +21,15 @@
 }
 
 #contact-container h2 {
-    font-size: 4rem;
+    font-size: 6rem;
     align-self: center;
-    margin: 4rem 0;
+    margin: 4rem 0 0 0;
 }
 
 #contact-container h3 {
     font-size: 1.6rem;
     align-self: center;
-    margin: 4rem 0;
+    margin-bottom: 6rem;
 }
 
 
@@ -46,7 +46,7 @@
 }
 
 .form-items {
-    margin: 2rem 0;
+    margin: 5rem 0;
 }
 
 .form-items label {
@@ -61,19 +61,19 @@
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid #000;
-    background-color: black;
+    border-bottom: 1px solid #f2f2f2;
+    background-color: transparent;
     padding: 1rem;
 }
 
 .form-items input {
-    height: 3rem;
-    width: 50%;
+    height: 2rem;
+    width: 100%;
     border-radius: 5px;
 }
 
 .form-items textarea {
-    height: 9rem;
+    height: 4rem;
     width: 100%;
 }
 
@@ -93,13 +93,17 @@
 
 .linebreak {
     width: 5rem;
-    margin: 3rem 0;
+    margin: 2rem 0;
 }
 
 .icon {
     color: #f2f2f2;
     font-size: 2rem;
-    margin: 0 2rem;
+    margin: 0 1rem;
+}
+
+.copy {
+    margin: 8rem 0 1rem;
 }
 
 @media (max-width: 600px) {

@@ -5,23 +5,20 @@ import Navigation from "../../Components/Navigation";
 import Destinations from "../../Pages/Destinations";
 import BackgroundVideo from "../../Components/Background";
 import { Services } from "../../Pages/Services";
-import Contact from '../Contact';
+import Contact from "../Contact";
 
 import { NavContext } from "../../Context/NavContext";
-import { useNav } from "../../Hooks/useNav";
 
 import "./LandingPage.css";
 
 const LandingPage = () => {
-  
   const { activeLinkId } = useContext(NavContext);
 
-    //can reference this video: https://www.youtube.com/watch?v=T8EYosX4NOo
+  //can reference this video: https://www.youtube.com/watch?v=T8EYosX4NOo
 
   const landingPage = document.querySelector(".LandingPage");
 
   if (activeLinkId === "services") {
-    //document.body.style.backgroundColor = "teal";
     landingPage.style.backgroundColor = "teal";
     document.body.classList.add("animate");
   } else if (activeLinkId === "destinations") {
@@ -32,7 +29,7 @@ const LandingPage = () => {
     landingPage.style.backgroundColor = "transparent";
   }
 
-  console.log(activeLinkId)
+  console.log(activeLinkId);
 
   return (
     <div className="LandingPage">
@@ -42,10 +39,10 @@ const LandingPage = () => {
         <HeroSection />
         <Services activeLinkId={activeLinkId} />
         <Destinations activeLinkId={activeLinkId} />
-        <Contact activeLinkId={activeLinkId}/>
+        <Contact activeLinkId={activeLinkId} />
       </main>
 
-      <BackgroundVideo activeLinkId={activeLinkId}/>
+      <BackgroundVideo activeLinkId={activeLinkId} />
       <Navigation />
     </div>
   );
