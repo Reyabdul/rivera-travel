@@ -35,7 +35,7 @@ export const Services = ({activeLinkId}) => {
         // <section className={`services ${activeLinkId === "services" && "inverse"}`} id='services' ref={servicesRef} >
         <section className="services" id='services' ref={servicesRef} data-color="#000">
 
-        <h2>My Services</h2>
+        <h2>Services</h2>
         <hr class="linebreak" />
             <div className="page-wrapper flex" id="services-container">
             {services.map((service, index)=>(
