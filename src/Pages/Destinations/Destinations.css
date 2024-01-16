@@ -4,8 +4,20 @@
     width: 100%;
     transition: background-color 0.3s linear;
     padding: 20rem 0;
-    color: white
+}
 
+#destination-container h2 {
+    font-size: 6rem;
+    align-self: center;
+    margin: 4rem 0 0 0;
+    color: #000;
+}
+
+#destination-container a {
+    display: inline-block;
+    font-size: 3rem;
+    text-align: right;
+    color: #000;
 }
 
 #destination-container {

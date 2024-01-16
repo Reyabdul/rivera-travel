@@ -13,13 +13,14 @@ const Destinations = ({ activeLinkId }) => {
       ref={destinationsRef}
     >
       <div className="page-wrapper" id="destination-container">
-        <h2>Our destinations</h2>
+        <h2>Destinations</h2>
         <div className="grid images">
           <img id="img-1" />
           <img id="img-2" />
           <img id="img-3" />
           <img id="img-4" />
         </div>
+        <a href="#">See more</a>
       </div>
     </section>
   );
