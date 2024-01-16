@@ -13,17 +13,21 @@ export const Services = ({activeLinkId}) => {
         {
             "svg": MenuIcon,
             "name": "Flight",
-            "content": "Dorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "content": "Dorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "icon": "airplane_ticket"
+
         },
         {
             "svg": MenuIcon,
             "name": "Hotel",
-            "content": "Dorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "content": "Dorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "icon": "hotel"
         },
         {
             "svg": MenuIcon,
             "name": "Cruise",
-            "content": "Dorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "content": "Dorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "icon": "directions_boat"
         },
     ]
 
@@ -31,11 +35,13 @@ export const Services = ({activeLinkId}) => {
         // <section className={`services ${activeLinkId === "services" && "inverse"}`} id='services' ref={servicesRef} >
         <section className="services" id='services' ref={servicesRef} data-color="#000">
 
+        <h2>My Services</h2>
+        <hr class="linebreak" />
             <div className="page-wrapper flex" id="services-container">
             {services.map((service, index)=>(
                 <div className='service' key={index}>
-                    <service.svg className="service-svg"/>
-                    <h2 className="service-title">{service.name}</h2>
+                    <span class="material-symbols-outlined service-icons">{service.icon}</span>
+                    <h3 className="service-title">{service.name}</h3>
                     <p className="service-content">{service.content}</p>
                 </div>
             ))}

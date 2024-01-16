@@ -5,7 +5,14 @@
     display: flex;
     justify-content: center;
     align-items: centre;
+    flex-direction: column;
     /*animation: all 3s fade-in;*/
+}
+
+.linebreak {
+    width: 5rem;
+    margin: 2rem 0;
+    align-self: center;
 }
 
 #services-container {
@@ -21,10 +28,37 @@
     flex-basis: 30%;
 }
 
+.services h2 {
+    font-size: 6rem;
+    align-self: center;
+    margin: 4rem 0 0 0;
+}
+
+.services h3 {
+    font-size: 2rem;
+    margin: 2rem 0;
+
+}
+
 .service-svg path {
     fill: orange;
     stroke: green;
 }
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24,
+}
+
+.service-icons {
+    font-size: 8rem;
+    color: teal;
+}
+
+
 
 
 @media (max-width: 600px) {
@@ -32,6 +66,7 @@
         flex-basis: 100%;
 
     }
+
     .service:not(:first-child) {
         margin-top: 3rem;
     }

@@ -19,7 +19,7 @@ const LandingPage = () => {
   const landingPage = document.querySelector(".LandingPage");
 
   if (activeLinkId === "services") {
-    landingPage.style.backgroundColor = "teal";
+    landingPage.style.backgroundColor = "white";
     document.body.classList.add("animate");
   } else if (activeLinkId === "destinations") {
     landingPage.style.backgroundColor = "#f2f2f2";
