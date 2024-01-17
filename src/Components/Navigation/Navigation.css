@@ -5,7 +5,7 @@ https://www.codevertiser.com/reactjs-responsive-navbar/
 .navigation-container {
     position: fixed;
     width: 100%;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     top: 0;
     z-index: 10;
 }
@@ -18,11 +18,7 @@ https://www.codevertiser.com/reactjs-responsive-navbar/
     align-self: center;
 }
 
-.nav-items li a {
-    color: #fff;
-}
-
-.menu-icon {
+.nav-icon {
     display: none;
 }
 
@@ -37,16 +33,15 @@ https://www.codevertiser.com/reactjs-responsive-navbar/
     font-size: .95rem;
     padding: .5rem 1rem .5rem 1rem;
     margin: 0;
-    border: .1rem solid #1a232447;
+    color: #fff;
 }
 
 @media (max-width: 600px) {
-    .menu-icon {
+    .nav-icon {
         display: block;
         cursor: pointer;
         align-self: center;
         width: 40px;
-        color: #fff;
     }
 
     .nav-items {

@@ -1,4 +1,3 @@
-import {ReactComponent as MenuIcon} from '../../Assets/menu-icon.svg';
 import { useNav } from "../../Hooks/useNav";
 
 
@@ -11,20 +10,17 @@ export const Services = ({activeLinkId}) => {
 
     const services = [
         {
-            "svg": MenuIcon,
             "name": "Flight",
             "content": "Dorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "icon": "airplane_ticket"
 
         },
         {
-            "svg": MenuIcon,
             "name": "Hotel",
             "content": "Dorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "icon": "hotel"
         },
         {
-            "svg": MenuIcon,
             "name": "Cruise",
             "content": "Dorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "icon": "directions_boat"
