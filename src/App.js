@@ -21,6 +21,23 @@ const App = () => {
         {/* {loading ? <Loading loading={loading} /> : <Landing />} */}
         <Landing />
       </NavProvider>
+
+  
+
+
+      {/* 
+
+            <Navigation />
+
+                  <LandPage />
+        <Services className='services' data-color="white" />
+
+
+      
+      <Loading />
+      <Destinations />
+
+      */}
     </div>
   );
 };
