@@ -4,13 +4,29 @@
     width: 100%;
     transition: background-color 0.3s linear;
     padding: 20rem 0;
+
 }
 
-#destination-container h2 {
+.heading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+    
+}
+
+.destinations h2 {
     font-size: 6rem;
     align-self: center;
     margin: 4rem 0 0 0;
     color: #000;
+    text-align: center;
+}
+
+.linebreak {
+    align-items: center;
+    justify-content: center;
 }
 
 #destination-container a {
@@ -18,10 +34,22 @@
     font-size: 3rem;
     text-align: right;
     color: #000;
+    
 }
 
 #destination-container {
     /* display: none; */
+    --s: 50px; /* the size on the corner */
+    --t: 2px;  /* the thickness of the border */
+    --g: 40px; /* the gap between the border and image */
+    
+    padding: calc(var(--g) + var(--t));
+    outline: var(--t) solid #202124; /* the color here */
+    outline-offset: calc(-1*var(--t));
+    mask:
+      conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
+      0 0/calc(100% - var(--s)) calc(100% - var(--s)),
+      linear-gradient(#000 0 0) content-box;
 }
 
 

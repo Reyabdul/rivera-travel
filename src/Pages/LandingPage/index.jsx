@@ -22,7 +22,7 @@ const LandingPage = () => {
     landingPage.style.backgroundColor = "white";
     document.body.classList.add("animate");
   } else if (activeLinkId === "destinations") {
-    landingPage.style.backgroundColor = "#f2f2f2";
+    landingPage.style.backgroundColor = "beige";
   } else if (activeLinkId === "contacts") {
     landingPage.style.backgroundColor = "#202124";
   } else if (activeLinkId === "herosection") {
