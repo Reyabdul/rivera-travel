@@ -42,7 +42,6 @@
     height: 90%;
     justify-content:space-evenly;
     flex-direction: column;
-
 }
 
 .form-items {
@@ -90,7 +89,6 @@
     background-color: rgb(245, 153, 32);
 }
 
-
 .linebreak {
     width: 5rem;
     margin: 2rem 0;
@@ -107,6 +105,15 @@
 }
 
 @media (max-width: 600px) {
+    #contact-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    #contact-container h2 {
+        font-size: 4rem;
+    }
+
     .form-items label {
         font-size: 1.2rem;
     }

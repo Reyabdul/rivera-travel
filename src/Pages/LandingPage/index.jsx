@@ -43,7 +43,7 @@ const LandingPage = () => {
       </main>
 
       <BackgroundVideo activeLinkId={activeLinkId} />
-      <Navigation activeLinkId={activeLinkId}  />
+      <Navigation activeLinkId={activeLinkId} />
     </div>
   );
 };

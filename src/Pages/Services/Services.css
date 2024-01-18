@@ -63,9 +63,11 @@
 }
 
 
-
-
 @media (max-width: 600px) {
+    .services h2 {
+        font-size: 4rem;
+    }
+
     .service {
         flex-basis: 100%;
 

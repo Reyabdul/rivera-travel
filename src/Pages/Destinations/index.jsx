@@ -2,7 +2,7 @@ import { useNav } from "../../Hooks/useNav";
 
 import "./Destinations.css";
 
-const Destinations = ({ activeLinkId }) => {
+const Destinations = () => {
   const destinationsRef = useNav("destinations");
 
   return (
@@ -10,7 +10,7 @@ const Destinations = ({ activeLinkId }) => {
     <section className="destinations" id="destinations" ref={destinationsRef}>
       <div className="heading-container">
         <h2>Destinations</h2>
-        <hr class="linebreak" />
+        <hr className="linebreak" />
       </div>
 
       <div className="page-wrapper" id="destination-container">

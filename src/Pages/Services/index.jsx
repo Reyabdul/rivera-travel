@@ -4,7 +4,7 @@ import { useNav } from "../../Hooks/useNav";
 
 import './Services.css';
 
-export const Services = ({activeLinkId}) => {
+export const Services = () => {
 
     const servicesRef = useNav("services");
 
@@ -32,11 +32,11 @@ export const Services = ({activeLinkId}) => {
         <section className="services" id='services' ref={servicesRef} data-color="#000">
 
         <h2>Services</h2>
-        <hr class="linebreak" />
+        <hr className="linebreak" />
             <div className="page-wrapper flex" id="services-container">
             {services.map((service, index)=>(
                 <div className='service' key={index}>
-                    <span class="material-symbols-outlined service-icons">{service.icon}</span>
+                    <span className="material-symbols-outlined service-icons">{service.icon}</span>
                     <h3 className="service-title">{service.name}</h3>
                     <p className="service-content">{service.content}</p>
                 </div>
