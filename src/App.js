@@ -2,6 +2,7 @@ import Loading from "./Components/Loading";
 import Landing from "./Pages/LandingPage";
 import { useEffect, useState } from "react";
 import { NavProvider } from "./Context/NavContext";
+import BackgroundVideo from "./Components/Background";
 
 import "./root.css";
 
@@ -17,6 +18,8 @@ const App = () => {
 
   return (
     <div>
+      <BackgroundVideo />
+
       <NavProvider>
         {/* {loading ? <Loading loading={loading} /> : <Landing />} */}
         <Landing />

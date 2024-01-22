@@ -58,14 +58,14 @@
 .service-icons {
     font-size: 8rem;
     color: teal;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 5px black;
 
 }
 
 
 @media (max-width: 600px) {
     .services h2 {
-        font-size: 4rem;
+        font-size: 2rem;
     }
 
     .service {

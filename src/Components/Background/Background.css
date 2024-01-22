@@ -1,9 +1,16 @@
 .background-video-container {
-
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
 .background-video {
-    width: 100vw;
+/*    width: 100vw;
     height: 100vh;
     object-fit: cover;
     position: fixed;
@@ -12,7 +19,10 @@
     top: 0;
     bottom: 0;
     z-index: -1;
-    filter: saturate(100%);
+*/    
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
 }
 
 .temp-heading {
@@ -23,20 +33,47 @@
     padding: 25rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
 
-
+/*
     .background-video {
         width: 100%;
         height: 100%;
         overflow-x: hidden;
 
     }
-
+*/
     .temp-heading {
         width: 100%;
         font-size: 2rem;
         color: yellow;
         text-align: center;
+    }
+
+    .background-video-container {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -3;
+    }
+    
+    .background-video {
+    /*    width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+    */    
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
     }
   }

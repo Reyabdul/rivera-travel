@@ -5,8 +5,8 @@ export const useOnScreen = (ref) => {
 
   const options = {
     root: null, //it is the view port
-    //rootMargin: "-50px",
-    threshold: 0.5, //0 - 1 scale (default 0)
+    rootMargin: "-150px",
+    threshold: 0, //0 - 1 scale (default 0)
   };
 
   //Intersection Observer
@@ -21,7 +21,7 @@ export const useOnScreen = (ref) => {
     observer.observe(ref.current);
 
     return;
-    // return () => observer.disconnect();
+    //  return () => observer.disconnect();
   });
 
   return isOnScreen;

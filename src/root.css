@@ -12,12 +12,11 @@ font-family: 'Quattrocento Sans', sans-serif;
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
 html {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 body {
@@ -42,8 +41,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Quattrocento', serif;
 }
 
-
-
 a {
   text-decoration: none;
   color: #1A2324;
@@ -62,7 +59,7 @@ hr {
 }
 
 .page-wrapper {
-  max-width: 87.5%;
+  width: 87.5%;
   margin: 0 auto;
   position: relative;
 }
@@ -79,3 +76,23 @@ hr {
   opacity: 1;
 }
 
+@media all and (max-width: 600px) {
+
+  html {
+
+  }
+
+  body {
+    max-width: 100%;
+    max-height: 100%;
+    overflow-x: hidden;
+  }
+
+  section {
+    height: 100%;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1rem;
+}
+}

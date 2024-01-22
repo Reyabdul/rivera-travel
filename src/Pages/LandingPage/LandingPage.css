@@ -4,11 +4,11 @@
     animation: ease-out 1s forwards fade-in;
     transition: all 0.3s ease-in;
 }
-
+/*
 .animate {
     transition: all 1s ease-in;
 }
-
+*/
 .addAnimation {
     animation: ease-out 1s forwards fade-in;
 }

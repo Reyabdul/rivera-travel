@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 
 import HeroSection from "../HeroSection";
 import Navigation from "../../Components/Navigation";
@@ -18,9 +18,11 @@ const LandingPage = () => {
 
   const landingPage = document.querySelector(".LandingPage");
 
+  useEffect(() => {
+
   if (activeLinkId === "services") {
     landingPage.style.backgroundColor = "white";
-    document.body.classList.add("animate");
+    // document.body.classList.add("animate");
   } else if (activeLinkId === "destinations") {
     landingPage.style.backgroundColor = "beige";
   } else if (activeLinkId === "contacts") {
@@ -29,20 +31,22 @@ const LandingPage = () => {
     landingPage.style.backgroundColor = "transparent";
   }
 
+}, [activeLinkId]);
+
   console.log(activeLinkId);
 
   return (
     <div className="LandingPage">
       {/*<Loading />*/}
+      {/* <BackgroundVideo /> */}
 
       <main>
         <HeroSection />
-        <Services activeLinkId={activeLinkId} />
-        <Destinations activeLinkId={activeLinkId} />
-        <Contact activeLinkId={activeLinkId} />
+        <Services />
+        <Destinations />
+        <Contact />
       </main>
 
-      <BackgroundVideo activeLinkId={activeLinkId} />
       <Navigation activeLinkId={activeLinkId} />
     </div>
   );
