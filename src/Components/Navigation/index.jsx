@@ -56,7 +56,10 @@ const Navigation = ({activeLinkId}) => {
                 }
             } else {
                 navContainer = document.querySelector(".navigation-container");
+                navItems = document.querySelector(".nav-items");
+
                 navContainer.style.backgroundColor = "transparent";
+                navItems.style.backgroundColor = "transparent";
             }
         }
     }, [activeLinkId, windowWidth, showNavbar]);
