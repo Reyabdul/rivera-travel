@@ -5,13 +5,21 @@ https://www.codevertiser.com/reactjs-responsive-navbar/
 .navigation-container {
     position: fixed;
     width: 100%;
-    padding-top: 1.5rem;
+    height: 65px;
     top: 0;
     z-index: 10;
 }
 
+#navigation {
+    align-items: center;
+    height: 100%;
+}
+
 .logo {
     flex-grow: 2;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding-left: 2rem;
 }
 
 .nav-items {
@@ -22,7 +30,7 @@ https://www.codevertiser.com/reactjs-responsive-navbar/
     display: none;
 }
 
-.navigation-container ul li:not(:last-child) {
+.navigation-container ul li {
     margin-right: 2rem;
 }
 
@@ -37,31 +45,45 @@ https://www.codevertiser.com/reactjs-responsive-navbar/
 }
 
 @media (max-width: 600px) {
+    .navigation-container {
+        transition: all .2s;
+    }
+
+    .logo {
+        padding-left: 1rem;
+    }
+
     .nav-icon {
         display: block;
         cursor: pointer;
         align-self: center;
         width: 40px;
+        padding-right: 1rem;
     }
 
     .nav-items {
         position: absolute;
         flex-direction: column;
-        width: 0;
-        right: 0;
         opacity: 0;
-        top: 45px;
-        overflow: hidden;
-        transition: all 0.3s ease-in;
+        top: 65px;
+        transition: all .3s;
+        font-size: 1.5rem;
     }
 
     .nav-items.active {
-        width: 50%;
+        width: 100vw;
+        height: 100vh;
         opacity: 1;
+        background-color: #000;
+        padding-top: 1rem;
+    }
+
+    .nav-items.active li {
+        align-items: end;
     }
 
     .navigation-container ul li {
-        margin: 1rem 0 1rem 0.5rem; 
+        margin: 1rem 0 1rem 1rem; 
     }
 
 }

@@ -6,7 +6,7 @@ const HeroSection = ({ activeLinkId }) => {
   const heroSectionRef = useNav("herosection");
 
   return (
-    <section className="herosection" ref={heroSectionRef}>
+    <section className="herosection" id="herosection" ref={heroSectionRef}>
       <h1 className="main-header" id="main-header">
         Travel Made Easy
       </h1>
